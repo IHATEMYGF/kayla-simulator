@@ -15,9 +15,13 @@
             <img src="bubble.webp" width="400" height="300" style="display: block;">
 
             <div id="messageResult"
-                 style="position: absolute; top: 110px; left: 40px; width: 300px;
-                        font-size: 1.5em; text-align: center;">
-            </div>
+     style="position: absolute; top: 110px; left: 40px; width: 300px;
+            font-size: 1.3em; text-align: center;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            white-space: normal;
+            line-height: 1.2;">
+</div>
         </div>
     </div>
 
@@ -27,7 +31,9 @@
     </div>
 
     <script>
-    const responses = ["idkkkkkk", "huh", "whattt", "Tôi không biết", "okay what", "you don't love me :(", "hiii", "uhhh", "Your mean", "STOPP", "I hate you", "uh huh!", "I HATE MY BOYFRIEND >:("];
+    const responses = ["idkkkkkk", "huh", "whattt", "Tôi không biết", "okay what", "you don't love me :(", "hiii", "uhhh", "Your mean", 
+    "STOPP", "I hate you", "uh huh!", "I HATE MY BOYFRIEND >:(", "I DON'T CARE ABOUT MY BOYFRIEND", "I HATE YOU", "I HATE TALKING TO HIM", 
+    "OMG", ":)", "I think I should talk to my boyfriend more!", "I don't actaully like hanging out with him, he so annoying."];
     const input = document.getElementById('messageInput');
     const resultDiv = document.getElementById('messageResult');
 
