@@ -33,22 +33,22 @@
     <script>
     const responses = ["idkkkkkk", "huh", "whattt", "Tôi không biết", "okay what", "you don't love me :(", "hiii", "uhhh", "Your mean", 
     "STOPP", "I hate you", "uh huh!", "I HATE MY BOYFRIEND >:(", "I DON'T CARE ABOUT MY BOYFRIEND", "I HATE YOU", "I HATE TALKING TO HIM", 
-    "OMG", ":)", "I think I should talk to my boyfriend more!", "I don't actaully like hanging out with him, he so annoying.", "I think I love him"];
+    "OMG", ":)", "I think I should talk to my boyfriend more!", "I think I love him", "SHUT UP", "I like kaylin more than him", 
+    "Wow i love the birthdaygift my boyfriend gave me!!!!", "I sure he would really appreciate it if I talked to him more..."];
+        
     const input = document.getElementById('messageInput');
     const resultDiv = document.getElementById('messageResult');
 
-    let lastResponse = null; // store previous response
+    let lastResponse = null;
 
     input.addEventListener('keydown', function(event) {
         if (event.key === 'Enter') {
             const userText = input.value.trim();
-
-            // don't respond if empty
+            
             if (userText === '') return;
 
             let randomResponse;
 
-            // keep picking until it's different from last one
             do {
                 randomResponse = responses[Math.floor(Math.random() * responses.length)];
             } while (randomResponse === lastResponse && responses.length > 1);
